@@ -3,16 +3,7 @@ const Checkbox = ({ id, label, checked, onChange, error }) => {
     <div className="flex flex-col gap-2">
       <label
         htmlFor={id}
-        className={[
-          "flex cursor-pointer items-center gap-4 rounded-lg border px-6 py-3",
-          "font-[Karla] text-base text-grey-900",
-          "transition-colors duration-150",
-          "hover:border-green-600",
-          "has-focus-visible:ring-2 has-focus-visible:ring-green-600 has-focus-visible:ring-offset-1",
-          error ? "border-red-error" : "border-grey-500",
-        ]
-          .filter(Boolean)
-          .join(" ")}
+        className={`flex cursor-pointer items-center gap-4 rounded-lg border px-6 py-3 font-[Karla] text-base text-grey-900 transition-colors duration-150 hover:border-green-600 has-focus-visible:ring-2 has-focus-visible:ring-green-600 has-focus-visible:ring-offset-1 ${error ? "border-red-error" : "border-grey-500"}`}
       >
         <input
           id={id}
@@ -24,19 +15,8 @@ const Checkbox = ({ id, label, checked, onChange, error }) => {
           className="sr-only"
         />
 
-        {/* Custom square indicator */}
         <span
-          className={[
-            "flex h-5 w-5 shrink-0 items-center justify-center rounded border-2",
-            "transition-colors duration-150",
-            checked
-              ? "border-green-600 bg-green-600"
-              : error
-                ? "border-red-error bg-white"
-                : "border-grey-500 bg-white",
-          ]
-            .filter(Boolean)
-            .join(" ")}
+          className={`flex h-5 w-5 shrink-0 items-center justify-center rounded border-2 transition-colors duration-150 ${checked ? "border-green-600 bg-green-600" : error ? "border-red-error bg-white" : "border-grey-500 bg-white"}`}
           aria-hidden="true"
         >
           {checked && (

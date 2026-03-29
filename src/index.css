@@ -16,5 +16,6 @@
   html {
     min-height: 100vh;
     background-color: var(--color-green-200);
+    font-family: var(--font-karla);
   }
 }

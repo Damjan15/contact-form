@@ -17,18 +17,11 @@ const Toast = ({ visible, onDismiss }) => {
     <div
       role="alert"
       aria-live="polite"
-      className={[
-        "fixed top-8 left-1/2 -translate-x-1/2",
-        "w-[calc(100%-2rem)] max-w-md",
-        "flex flex-col gap-2 rounded-xl bg-grey-900 px-8 py-6",
-        "z-50",
-      ]
-        .filter(Boolean)
-        .join(" ")}
+      className="fixed top-8 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-md flex flex-col gap-2 rounded-xl bg-grey-900 px-8 py-6 z-50"
     >
       <div className="flex items-center gap-3">
         <img
-          src="/icons/icon-success-check.svg"
+          src="/icons/icon-success.svg"
           alt=""
           aria-hidden="true"
           className="h-5 w-5 shrink-0"

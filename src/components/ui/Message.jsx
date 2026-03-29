@@ -29,20 +29,7 @@ const Message = ({
         aria-required={required}
         aria-invalid={!!error}
         aria-describedby={error ? `${id}-error` : undefined}
-        className={[
-          "w-full rounded-lg border bg-white px-4 py-3",
-          "font-[Karla] text-base text-grey-900",
-          "outline-none transition-colors duration-150",
-          "placeholder:text-grey-500",
-          "resize-none",
-          "hover:border-green-600",
-          "focus:border-green-600 focus:ring-1 focus:ring-green-600",
-          error
-            ? "border-red-error focus:border-red-error focus:ring-red-error hover:border-red-error"
-            : "border-grey-500",
-        ]
-          .filter(Boolean)
-          .join(" ")}
+        className={`w-full rounded-lg border bg-white px-4 py-3 font-[Karla] text-base text-grey-900 outline-none transition-colors duration-150 placeholder:text-grey-500 resize-none ${error ? "border-red-error hover:border-red-error focus:border-red-error focus:ring-1 focus:ring-red-error" : "border-grey-500 hover:border-green-600 focus:border-green-600 focus:ring-1 focus:ring-green-600"}`}
       />
 
       {error && (
