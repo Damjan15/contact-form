@@ -1,4 +1,4 @@
-function Input({
+const Input = ({
   id,
   label,
   required = false,
@@ -6,7 +6,7 @@ function Input({
   value,
   onChange,
   error,
-}) {
+}) => {
   return (
     <div className="flex flex-col gap-2">
       <label htmlFor={id} className="font-[Karla] text-base text-grey-900">
@@ -53,6 +53,6 @@ function Input({
       )}
     </div>
   );
-}
+};
 
 export default Input;
