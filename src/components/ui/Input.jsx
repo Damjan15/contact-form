@@ -9,7 +9,7 @@ const Input = ({
 }) => {
   return (
     <div className="flex flex-col gap-2">
-      <label htmlFor={id} className="font-[Karla] text-base text-grey-900">
+      <label htmlFor={id} className="text-base text-grey-900">
         {label}
         {required && (
           <span className="ml-3 text-green-600" aria-hidden="true">

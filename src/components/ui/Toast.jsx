@@ -21,17 +21,15 @@ const Toast = ({ visible, onDismiss }) => {
     >
       <div className="flex items-center gap-3">
         <img
-          src="/icons/icon-success.svg"
+          src="/icons/icon-success-check.svg"
           alt=""
           aria-hidden="true"
           className="h-5 w-5 shrink-0"
         />
-        <p className="font-[Karla] text-base font-bold text-white">
-          Message Sent!
-        </p>
+        <p className="text-base font-bold text-white">Message Sent!</p>
       </div>
 
-      <p className="font-[Karla] text-base text-grey-500">
+      <p className="text-base text-grey-500">
         Thanks for completing the form. We'll be in touch soon!
       </p>
     </div>
