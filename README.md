@@ -1,16 +1,56 @@
-# React + Vite
+# Contact Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Preview](/public/preview.jpg)
 
-Currently, two official plugins are available:
+A clean, accessible contact form built with React and Tailwind CSS V4. Includes real-time layout responsiveness, custom form validation, and a success toast notification on submission.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Form validation on submit with field-level error messages
+- Email format validation
+- Success toast notification that auto-dismisses after 4 seconds
+- Fully keyboard navigable
+- Screen reader accessible — inputs, errors, and success message are all announced
+- Responsive layout across mobile, tablet, and desktop
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- [React.js](https://react.dev/)
+- [Tailwind CSS V4](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js v18+
+- npm
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/contact-form.git
+   cd contact-form
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and visit `http://localhost:5173`
